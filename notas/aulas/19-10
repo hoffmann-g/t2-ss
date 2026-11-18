@@ -1,0 +1,31 @@
+# reconhecimento ativo
+
+- ruido é a diff entre passivo x ativo
+    - portas
+        - achar portas
+            - tcp (3wh)
+                nmap atualmente pra n =1000 portas mais importantes
+            - evasion
+                - frequency, decoy, fragmentation
+        - qual protocolo (versao)
+        - cve
+            - exploit conhecido
+    - domains
+    - vulnerabilidades
+    - arquivos / diretorios
+
+            
+formato do relatorio
+- metodologia
+- gars
+- riscos <- foco, principalmente visual
+- ações
+- declaração de uso de IA
+
+pode ser html iterativo
+
+prova 23/11
+- reconhecimento passivo
+- reconhecimento ativo -> portas
+- tryhackme
+- owasp top 10

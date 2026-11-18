@@ -1,0 +1,89 @@
+25 colaboradors
+60 sistemas
+rp mv
+
+oracle dados paciente
+    fileserver para exames
+
+dados sensiveis vs dados pessoais
+
+roles de identificavel vs identificado
+
+tudo gira em torno do mv - 60 subsistemas
+
+parcerias com startups
+
+prontuario integrado com 
+
+core module = mv (gestão
+
+cdi centro de diagnostico de imagem
+
+é possivel importar dados externos pro sistema do hospital dependendo do tipo de dado (exames)
+
+rh -> matricula -> ad na microsoft -> abrir chamado pra TI cria manualmente usuarios em sistemas
+
+rotinas de desligamento de usuarios e usuarios inativos (férias/afastamentos)
+
+trilha de auditoria de modificacao aos dados depende do modulo
+    - acesso indevidos de dados necessitam de auditoria manual
+
+há vpns e alguns medicos tem acesso fora do hospital
+
+um medico pode acessar dados de qualquer paciente, mas existe tracing
+
+cobertura de funcionarios faz com q acesso seja dinamico, entao acesso não pode simplesmente ser por andar por ex
+
+cada predio tem sua segmentacao de rede, hospital tem rede interna pra acesso ao mv (tem vpn), internet nao é liberado (gw policy) tem bloqueio de acesso
+
+ngx, tomcat, getit
+
+sistemas criticos: vm e pax
+
+servidores locais na pucrs
+
+auditoria quando fecham contratos e parcerias com outras empresas
+
+firewall de borda externa + firewall de datacenter
+
+moodle para treinamento de funcionarios
+
+testes de phishing com funcinoarios
+
+* canais no whatsapp e integração é feita por terceiros (orpei)
+    - possiveis vazamentos de dados, ou compartilhamento de documentos com malware
+
+call center de terceiros q usam o MV
+
+terceiros usam o MV pra acessar dados como de cadastros
+- tem logins com escopo definido por role - mas ainda tem processo manual
+
+alguns equipamentos antigos ficam offline ou tem sub-rede dedicada
+
+atualmente sinais vitais são reportados manualmente, mas há projeto de integração com MV
+
+responsabilidade vs autoria em matriz (getit vs equipe interna)
+    - getit cuida mais de infraestrutura
+    - há especialistas proprios do getit
+        1 esp
+        3 analistas
+
+autotrend - procura de vulnerabilidade
+MV roda em http
+    - medicos rodam com vpn ainda
+2025 html5
+
+alerta de eventos de segurança
+    - runwsware avisado pela equipe do getit
+    - logs persistidos por até 1 ano
+
+protocolos do hospital e da universidade em caso de ataque / vazamento de dados de acordo com lgpd e contratos
+
+dados de ensino / pesquisa devem passar por um comitte antes de serem liberados para uso externo
+
+handoff é buscar fragilidades em alto nivel
+- nao gestão de termos
+- dominios
+- vulnerabilidades
+- arquivos criados por membros do hospital que estão publicos
+- ações

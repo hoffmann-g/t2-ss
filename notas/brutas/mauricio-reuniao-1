@@ -1,0 +1,65 @@
+Dados ficam na MV ORACLE (?) (backup em nuvem, segregado entre pacientes e outros dados), dados de imagem em file server, segregados do admininstrativo. dados administrativos guardados inclusive em mídia física.
+Dados compartilhados entre operadoras (SUS, UniMed entre outros).
+
+
+
+Dados de saúde são todos sensíveis. Religiao também, sexualidade entre outros. Identificações não são sensíveis, mas são pessoais.
+-------------------------------------------------------------------------
+zero glosa (?)
+
+prontuario integrado ao MV (modulo administrativo, conta, PEP (portal eletrônico paciente)
+MV - peça centralizada, software generalizado, reúne histórico de pacientes
+HOSPITAL em processo de trasferencia de software legados em um serviço centralizado (reduzir fragmentação)
+
+Modulo de sistema de imagems (exames), integrado ao MV. Dados em texto no banco, imagens em file server. 
+
+Há dificuldade de acesso de exames realizados em outros lugares, embora seja possível (pode exigir nova realização do exame)
+
+Processo de cadastro: TI realiza cadastro manualmente de profissional (não ha integraçao ainda com AD). Senha sem exigência de caracteres especiais (por conveniencia, para evitar problemas com senhas esquecidas). Há restrições quanto ao conteúdo destas (ex.: não pode ser nome de familiares).
+
+Funcionarios desligados têm usuário desabilitado
+Funcionario em férias tem acesso temporariamente bloqueado aos sistemas (e ao hospital?
+
+LOGS: cada sistema tem sua propria auditoria. Acessos indevidos? R: Todo colaborador tem integração (termo de confidenciabilidade) (termo de conduta), existem sistemas de ocorrência para permitir acessos em certos casos (acesso a prontuarios por profissionais que realmente estavam envolvidos nos exames). Audita acesso () e modificação de laudos.
+
+Todo profissional de saude tem acesso a quaisquer dados. Credenciais permitem acesso a estes. Necessario estar conectado na rede do hospital. App permite acesso por fora. Ainda assim, auditoria (manual) permite conferir se acessos foram indevidos.
+
+Não há "aviso automático" (rotatividade alta entre profissionais entre os diferentes andares impede restrição de acesso de certos andares). Razão: necessario para poder tratar os pacientes.
+
+Rede interna: cada predio tem rede segmentada (a rede do hospital, HSLCorp, que tem acesso ao MV (acessivel somente por VPN fora da rede)). Acesso a esta é rastreável. Acesso à internet é limitado. Pen-drive não permitido. Não há segmentação por andares (só por prédio).
+
+Sistemas de observabilidade: Há avisos (notificações) para que sejam realizadas ações (tomcat, usado pelo MV, precisa ser reiniciado aprox. a cada semana para poupar recursos (logs consomem muitos dados)). Extremamente crítico o reinício do MV (sistema de prontuários), pois atrasa atendimentos.
+
+Admin de infra realizada pela própria PUC (universidade, realiza manutenções de infra). OPERAÇÃO DO SERVIDOR gerida pelo Hospital São Lucas (ex.: reinicio de servidores).
+
+Há firewall de borda externa e de datacenter.
+
+Startups precisam seguir exigências estritas para serem integradas ao hospital.
+
+IA: politica de uso/acesso ainda não definida (alguns profissionais tem acesso, outros não por não terem acesso a partes da internet em geral, mas não é controlado).
+
+Treino de funcionarios: passa por tempo de integração (2 a 7 dias). Há curso sobre cuidado quanto a partilha de informações. Programa de segurança continuada: já foram realizados teste de phishing (30 pessoas cairam em um caso, até gestores kkkk).
+
+Termos de partilha de dados com o bot de atendimento do Whatsapp dependem dos termos do aplicativo (Meta).
+
+orpen - novo serviço de atendimento, guardam os dados dos pacientes (terceirizado, ponto de falha). nuvem da AWS.
+Bot - terceirizado.
+
+Terceirizados tem login alternativo (perfil somente de agendamento e acesso limitado (ex.: setor financeiro tem acesso somente ao módulo financeiro (válido para o pessoal do hospital também)).
+
+Primeiro site realizado em wordpress. Site será refeito totalmente.
+
+Equipamentos médicos: equipamentos antigos não conectados na rede. Outros antigos são segmentados (até mesmo fisicamente, com switches físicos) e são permitidos somente fax. Alguns usam Windows XP ou 7. Há tentativa de atualizar varios PCs até Windows 11.
+
+Há matriz de responsabilidades (80 servidose co GTIT, que mantém disponível, faz backups, etc). Hospital OPERA os servidores somente.
+
+Time de segurança compartilhado. 
+MV em HTTP, será atualizado para ser HTTPS
+
+Registro de eventos de segurança: ex.: ransomware avisado em tempo rápido. sabe-se que dá para acessar logs de até 1 ano (logs ruins (?)).
+
+Protocolo (do Hospital e da Universidade): ?? (existe)
+
+Dados usados em ensino/pesquisa: passa por comitê de ética antes de ser usado e compartilhado entre parceiros. Requerem consentimento do paciente para ser usado.
+
+Qual o critério de sucesso em relação ao trabalho de nós, estudantes? Diagnóstico de possíveis vulnerabilidades (como a presença de múltiplos domínios). Se possível, apontar possíveis soluções também.

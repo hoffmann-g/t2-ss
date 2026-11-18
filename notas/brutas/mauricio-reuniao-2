@@ -1,0 +1,76 @@
+Email institucional dos funcionários desativado logo após desligamento
+
+Login direto no MV (timeout de 35 minutos) (Sugerem fazer logout ao sair. Frisam que email é de uso único/pessoal) (Risco: médicos às vezes emprestam
+senhas uns aos outros)
+
+Nem todos (estagiários?) tem acesso (ao email?)
+
+Desafios. Input de informações sensíveis a LLMs (tentativa de mitigar)
+Politica de uso de IA (em desenvolvimento) (o que pode e o que não pode)
+
+Só a TI tem acesso aos bancos de dados (cadastros). Acesso restringido
+Tabelas principais tem auditoria (rastros). Restrição mais rígida do que consegui anotar
+
+Formulario para startups: serviços que interagem com os serviços do hospital usam servidor intermediário. São avisados quando há update de, por exemplo, firewall.
+
+LGPD Startups: não há revalidação constante (de formulário(?)), mas há quando há revalidação de contrato.
+
+Instalação levou 14 horas e instalaram em HTTP em vez de HTTPS (erro de instalaçao). Exigiria reinstalar o sistema inteiro (mais 14 horas?)
+
+Sabe-se as ações de quem acessa os sistemas relacionados aos pacientes (diferencia bisbilhoteiros de quem realmente fez uma ação). Reforçada (na entrevista) limitação de todos os profissionais terem acesso aos dados de todos os andares (ideal seria o funcionário ter acesso só ao de seu respectivo andar)
+
+Identificario se prontuário já estava aberto por outro funcionário (informa acesso simultâneo. Preferencialmente, acesso simultaneo não deve acontecer. Quando ocorre, pode-se investigar a causa).
+
+Filtragem de ações via excel (pouquissimo automatizado, muito manual) (ações de quê?) (Resposta: Relatório de auditoria do MV, salvo em formato de tabela (excel))
+
+Várias ações são registradas, desde ações básicas como cliques (?) até ações realizadas (acesso, ação concreta etc)
+
+Comitê de LGPD: se ocorre evento durante eventos (ruins!), tem que ter alguém disponível para agir (pessoa de confiança da pessoa principal). Um cobre o outro quando o outro está de férias. Ambos não entram de férias ao mesmo tempo.
+
+Acesso à internet fortemente limitado. Algumas liberações podem ocorrer, mas, em casos normais, MUITOS websites são bloqueados por padrão.
+
+Ataque via golpes telefônicos contra funcionários do hospital. Atacantes podem conseguir informações sobre pacientes em certos casos (funcionário sob estresse, desatento, _clueless_ etc). (Ligações feitas diretamente para o leito?)
+
+Há central telefônica (1980, antiga). 
+
+Aplicações das equipes de TI do Hospital usam Express da Oracle (low-code, pouca chance de ter vulnerabilidades (?))
+
+20 (?) servidores do hospital
+
+Aplicações tudo WEB
+
+Imagem de sistema operacional super simples (não tem nem pacote office)
+
+Há histórico de acesso a itens pessoaos de funcionários
+Geralmente não são conectados na rede (?)
+Equipamentos segmentados via rede quando conectados acesso à internet bloqueada). 
+VLAN gerida pelo GTIT
+
+Antigamente, turnover era frequente na assistencia. Hoje em dia, todas as áreas são afetadas.
+
+Problemas são informados à equipe (é acionada) (entre GTIT e equipe do hospital). GTIT isola da rede. Equipe do hospital toma ação.
+
+Notificações: por email ou por outros meios. 
+
+Chamadas em alguns setores são gravadas (no call-center).
+
+Alguns sistemas podem ser acessados pelo celular pessoal dos funcionarios
+(Medicos são PJ. Usam seus celulares próprios)
+
+Trocam de senhas a cada 3 meses. 
+
+Senha ou justiifcativa para acesso ao prontuário (em planejamento)
+
+Rede segmentada por prédio (na PUC inteira) (já informado antes)
+
+
+
+
+
+
+
+
+
+
+
+
