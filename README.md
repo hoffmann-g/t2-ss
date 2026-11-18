@@ -16,7 +16,8 @@ O conteúdo está separado entre notas cruas e documentos estruturados.
 ## documentos/
 
 - [roteiro-entrevista.md](documentos/roteiro-entrevista.md) — roteiro de perguntas da entrevista, mapeado aos CIS Controls v8. Também em [PDF](documentos/roteiro-entrevista.pdf).
-- [problemas-e-solucoes.md](documentos/problemas-e-solucoes.md) — riscos levantados na entrevista.
+- [lista-de-riscos.md](documentos/lista-de-riscos.md) — lista de riscos no formato definido em aula, com 6 riscos.
+- [problemas-e-solucoes.md](documentos/problemas-e-solucoes.md) — inventário mais amplo de observações da entrevista, usado como material candidato para novos riscos.
 - [avaliacao-vulnerabilidades-lab.md](documentos/avaliacao-vulnerabilidades-lab.md) — base da apresentação sobre avaliação de vulnerabilidades em laboratório.
 
 ## Formato do documento final
@@ -27,6 +28,6 @@ O fluxo do trabalho é: levantar pontos com CIS Controls, IA e pesquisa, depois 
 
 ## Pendências
 
-- A tabela em `problemas-e-solucoes.md` ainda usa o formato antigo e precisa migrar para as colunas da lista de riscos.
+- A lista de riscos cobre 6 riscos. As demais observações de `problemas-e-solucoes.md` ainda não foram convertidas para o formato.
 - A foto "Lacunas entre GTIT e HSL" (28/10) não foi recuperada. A mídia expirou no servidor do WhatsApp.
 - O recon bruto (nmap e DIRB) permanece no Google Doc. Os achados em forma de validação estão na seção 12 do roteiro.
